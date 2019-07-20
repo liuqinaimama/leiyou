@@ -1,0 +1,113 @@
+.banner img{
+    height:320px;
+    width:100%;
+}
+#content ul li{
+    height:55px;
+}
+#content ul li.hover{
+		display:block;
+		height:55px;
+		color:#2DB5A3;
+		line-height:27px;
+		border-bottom:1px solid #2DB5A3;
+        text-align:center;
+    }
+    #content ul li a:hover{
+        color:#2DB5A3;
+    }
+    #content ul li.hover a{
+        color:#2DB5A3;
+    }
+   
+@media screen and (min-width:992px){
+
+   .banner{
+       position:relative;
+   }
+
+   .title-banner{
+       position:absolute;
+       left:50%;
+       top:50%;
+       letter-spacing:10px;
+       transition:transform 1s;
+   }
+   .title-banner:hover{
+       transform:translateY(10px) scale(1.3);
+   }
+  .title-banner h5{
+      margin-left:-8px;
+      font-weight:lighter;
+      letter-spacing:5px;
+  }
+  .row{
+      height:430px;
+      border-bottom:1px solid #e8e8e8;
+      margin-top:135px;
+  }
+  
+
+  .my-size{
+      width:450px;
+  }
+    .col-lg-6 h3{color:#565656;
+    }
+    .col-lg-6 p{
+      width:100%;
+      margin:30px 0;
+      color:#d7d7d7;
+  }
+    .col-lg-6 a{
+    border:1px solid #a0d2cc;
+      text-decoration:none;
+      color:#a0d2cc;
+      padding:8px;
+      border-radius:0.25rem;
+  }
+   
+}
+@media screen and (max-width:991px){
+   
+    .banner{
+        position:relative;
+    }
+   .title-banner{
+       position:absolute;
+       top:50%;
+       left:50%;
+       letter-spacing:10px;
+       transition:transform 1s;
+   }
+    .title-banner:hover{
+        transform:translateY(10px) scale(1.3);
+    }
+    .title-banner h5{
+        margin-left:-8px;
+        font-weight:lighter;
+        letter-spacing:5px;
+    }
+    .row{
+        height:430px;
+        border-bottom:1px solid #e8e8e8;
+        margin-top:135px;
+    }
+
+    .col-lg-6 h3{color:#565656;
+    }
+    .col-lg-6 p{
+        width:100%;
+        margin:30px 0;
+        color:#d7d7d7;
+    }
+    .col-lg-6 a{
+        border:1px solid #a0d2cc;
+        text-decoration:none;
+        color:#a0d2cc;
+        padding:8px;
+        border-radius:0.25rem;
+    }
+   
+}
+
+

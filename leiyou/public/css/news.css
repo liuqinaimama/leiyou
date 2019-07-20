@@ -1,0 +1,55 @@
+#content ul li{
+	height:55px;
+}
+#content ul li.hover{
+	display:block;
+	height:55px;
+	color:#2DB5A3;
+	line-height:27px;
+	border-bottom:1px solid #2DB5A3;
+			text-align:center;
+	}
+	#content ul li a:hover{
+			color:#2DB5A3;
+	}
+	#content ul li.hover a{
+			color:#2DB5A3;
+	}
+.banner{
+	background:url("../img/nav_img3.jpg") no-repeat center top;
+	width:100%;
+	height:320px;
+	background-size:cover;
+	position:relative;
+}
+.banner-title{
+	position:absolute;
+	top:50%;
+	left:50%;
+	font-size:1.5rem;
+}
+.my-border-style:after{
+  display:table;
+  content:'';
+  clear:both;
+}
+.my-border-style{
+ padding-bottom:50px;
+  border-bottom:1px dashed #eaeaea;
+}
+.pagination li a{border-radius:0.25rem;}
+@media screen and (min-width:992px){
+	.my-width{
+	width:350px;
+	
+   }
+.my-img{
+	width:200px;
+}
+
+}
+@media screen and (max-width:991px){
+  .ml-5, .mx-5 {
+    margin-left: 1rem !important;
+}
+}

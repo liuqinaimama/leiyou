@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 设置视口-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- 导入css-->
+  <link rel="stylesheet" href="./boot/css/bootstrap.css"/>
+  <!-- 导入3个js-->
+  <script src="./boot/js/jquery.min.js"></script>
+  <script src="./boot/js/popper.min.js"></script>
+  <script src="./boot/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/logout.css"/>
+	<link rel="stylesheet" href="./css/comm.css"/>
+</head>
+<body>
+	<!-- 导航 -->
+    <div id="header"></div>
+    <!--用户登录-->
+    <div class="user_log">
+      <div class="user_logtop">
+        <span class="user_left"></span>
+        <span class="user_middle">欢迎志同道合之人</span>
+        <span class="user_right"></span>
+      </div>
+      <div class="user_logcontent">
+        <div class="uname">
+          <span>手机号</span>
+          <input type="text" name="uname">
+          <span>请输入注册手机号码</span>
+        </div>
+        <div class="yzm">
+          <span>验证码</span>
+          <!-- <input type="password" name="yzm"> -->
+          <input type="text" id="code_input" value="" /><span id="my_button">验证</span>
+          <div id="v_container" style="width: 75px;height: 35px;"></div>
+          <!-- <a href="javascript:;">GRXC</a> -->
+          <span>请输入验证码</span>
+       </div>
+        <div class="upwd">
+          <span>密码</span>
+          <input type="password" name="upwd">
+          <span>密码输入必须6~12位</span>
+       </div>
+        <div class="reupwd">
+          <span>确认密码</span>
+          <input type="password" name="reupwd">
+          <span>请再次输入密码</span>
+       </div>
+          <input type="radio" class="radios"> <span class="radioFont">我已阅读并接受 "服务条款"</span>
+       <div class="login">
+         <button>注册</button>
+       </div>
+      </div>
+   </div>
+
+	
+<!-- footer -->
+<div id="footer">
+  </div>
+
+</body>
+<script src="./js/ajax.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/gVerify.js"></script>
+  <script>
+		var verifyCode = new GVerify("v_container");
+
+		document.getElementById("my_button").onclick = function(){
+			var res = verifyCode.validate(document.getElementById("code_input").value);
+			if(res){
+        my_button.innerHTML="验证成功"
+        my_button.style.color="#87d0e3"
+			}else{
+        my_button.innerHTML="验证码有误"
+        my_button.style.color="red"
+			}
+		}
+	</script>
+</html>

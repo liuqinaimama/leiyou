@@ -1,0 +1,165 @@
+#header{
+    height:5rem;
+}
+.user_logtop{
+    width:103rem;
+    text-align:center;
+    margin:0 auto;
+    margin-top:8rem;
+}
+.user_logtop:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+.user_logtop .user_left,.user_log .user_right{
+    float:left;
+    height:1px;
+    width:35%;
+    border-bottom:1px dashed #56794894;
+    margin:10px 0 0 20px;
+    margin-left:50px;
+}
+.user_logtop .user_middle{
+    float:left;
+    color:#65d0c5;
+    margin-left:30px;
+}
+.user_logtop .user_right{
+    float:left;
+    margin-left:20px;
+}
+#span1{color:red;
+display:inline-block;
+margin-bottom:2rem;
+}
+.user_logcontent{
+    width:626px;
+    margin:0 auto;
+    margin-top:4rem;
+}
+#uname_span,#upwd_span{
+    color:red !important;
+    font-style:italic;
+    font-size:15px;
+    margin-left:10px;
+    transform:translateX(10px);
+
+}
+#upwd_span{
+    position:relative;
+    top:1.3rem;
+    right:5rem;
+}
+.user_logcontent .uname>span:first-child,.user_logcontent .upwd>span:first-child{
+    width:60px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    background:#ededed;
+    border-radius:5px;
+    float:left;
+}
+.user_logcontent .upwd>span:first-child{
+    margin-left:-60px;
+    margin-top:1rem;
+}
+.user_logcontent .uname>input,.user_logcontent .upwd>input{
+    background:#ededed;
+    border:1px solid #ededed;
+    margin-left:1rem;
+    width:276px;
+}
+.user_logcontent .upwd>input{
+    margin-top:1rem;
+    float:left;
+}
+.user_logcontent .upwd:after{
+    display:table;
+    content:"";
+}
+.user_logcontent .upwd a{
+  display:block;
+  float:left;
+   width:5rem;
+   position:relative;
+   top:16px;left:-81px;
+   color:#607d8b;
+}
+.login{
+    clear:both;
+    width:350px;
+}
+.login>button:first-child{
+   width:60%;
+   outline:none;
+   border:0;
+   background:#87d0e3;
+   margin-top:1rem;
+   border-radius:4px;
+   height:40px;
+}
+#logout{
+    width:30%;
+    height:40px;
+    outline:none;
+    border:0;
+    background:#87d0e3;
+    margin-left:8.7%;
+    border-radius:4px;
+}
+button{cursor:pointer;}
+@media screen and (max-width:1245px){
+    .user_logtop .user_middle{
+        float:left;
+        color:#65d0c5;
+        margin-left:30px;
+        
+    }
+    .user_logtop .user_left{
+        float:left;
+        color:#65d0c5;
+        margin-left:80px;
+        width:25%;
+    }
+    .user_logtop .user_right{
+        float:left;
+        width:25%;
+    }
+}
+@media screen and (max-width:930px){
+    .user_logtop .user_middle{
+        float:left;
+        color:#65d0c5;
+        margin-left:30px;
+        
+    }
+    .user_logtop .user_left{
+        float:left;
+        color:#65d0c5;
+        margin-left:60px;
+        width:15%;
+    }
+    .user_logtop .user_right{
+        float:left;
+        width:15%;
+    }
+}
+@media screen and (max-width:570px){
+    .user_logtop .user_middle{
+        float:left;
+        color:#65d0c5;
+        margin-left:10px;
+        
+    }
+    .user_logtop .user_left{
+        float:left;
+        color:#65d0c5;
+        margin-left:10px;
+        width:10%;
+    }
+    .user_logtop .user_right{
+        float:left;
+        width:10%;
+    }
+}

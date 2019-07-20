@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 设置视口-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- 导入css-->
+  <link rel="stylesheet" href="./boot/css/bootstrap.css"/>
+  <!-- 导入3个js-->
+  <script src="./boot/js/jquery.min.js"></script>
+  <script src="./boot/js/popper.min.js"></script>
+  <script src="./boot/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/login.css"/>
+	<link rel="stylesheet" href="./css/comm.css"/>
+</head>
+<body>
+	<!-- 导航 -->
+    <div id="header"></div>
+    <!--用户登录-->
+    <div class="user_log">
+      <div class="user_logtop">
+        <span class="user_left"></span>
+        <span class="user_middle">欢迎志同道合之人</span>
+        <span class="user_right"></span>
+      </div>
+      <div class="user_logcontent">
+        <span id="span1"></span>
+        <div class="uname">
+          <span>用户名</span>
+          <input type="text" name="uname" placeholder="手机|邮箱" id="uname">
+          <span id="uname_span"></span>
+        </div>
+        <div class="upwd">
+          <span>密码</span>
+          <input type="password" name="upwd" placeholder="请输入6~12位字符" id="upwd">
+          <a href="javascript:;">忘记密码？</a>
+          <span style="float:left;margin:-5px 0 0 6px" id="upwd_span"></span>
+       </div>
+       <div class="login">
+         <button id="login">登录</button>
+         <button id="logout">注册</button>
+         <script>
+           var zbutton=document.getElementById("logout");
+           zbutton.onclick=function(){
+             open("logout.html","_self")
+           }
+         </script>
+       </div>
+      </div>
+   </div>
+
+	
+<!-- footer -->
+<div id="footer">
+  </div>
+
+</body>
+<script src="./js/ajax.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/login.js"></script>
+</html>
